@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Malabar</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.png" alt="logo" />
+
+      <div class="open-btn">
+        <button class="open-button" onclick="openForm()">
+          <strong>AJOUTER UN PRODUIT</strong>
+        </button>
+      </div>
+    </header>
+
+    <div class="titreStock">
+      <h1>
+        <span class="traitTitreStock">-----</span> GESTION DU STOCK
+        <span class="traitTitreStock">-----</span>
+        <img src="images/bouteille.png" class="bouteille" alt="" />
+      </h1>
+    </div>
+
+    <!-- INSERTION DU FORMULAIRE POPUP QUI VA S'OUVRIR GRACE AU BOUTTON OPEN-BUTTON PLACE DANS LE HEADER -->
+
+    <div class="login-popup">
+      <div class="form-popup" id="popupForm">
+        <form action="" class="form-container">
+          <h2>Ajoutez les information du produit</h2>
+
+          <label for="nomProduit">
+            <strong>Nom du produit</strong>
+          </label>
+          <input
+            type="text"
+            id="nomProduit"
+            placeholder="Nom du produit"
+            name="nomProduit"
+          />
+
+          <label for="quantite">
+            <strong>Quantité</strong>
+          </label>
+          <input
+            type="text"
+            id="quantite"
+            placeholder="Quantité du produit"
+            name="quantite"
+          />
+
+          <br />
+
+          <label for="prixAchatHT">
+            <strong>Prix Achat HT</strong>
+          </label>
+          <input
+            type="text"
+            id="prixAchatHT"
+            placeholder="Prix Achat hors Taxe"
+            name="prixAchatHT"
+          />
+
+          <label for="prixVenteHT">
+            <strong>Prix vente HT</strong>
+          </label>
+          <input
+            type="text"
+            id="prixVenteHT"
+            placeholder="Prix Vente hors Taxe"
+            name="prixVenteHT"
+          />
+
+          <br />
+
+          <label for="margeHT">
+            <strong> Marge HT</strong>
+          </label>
+          <input
+            type="text"
+            id="margeHT"
+            placeholder="Marge hors Taxe"
+            name="margeHT"
+          />
+
+          <label for="prixVenteTTC">
+            <strong> Prix vente TTC</strong>
+          </label>
+          <input
+            type="text"
+            id="prixVenteTTC"
+            placeholder="Prix de vente TTC"
+            name="prixVenteTTC"
+          />
+
+          <br />
+
+          <select name="typeProduit" id="typeProduit" class="typeProduit">
+            <option value="">--- Type de produit ---</option>
+            <option value="Boisson non alcolisée">
+              Boisson non alcoolisée
+            </option>
+            <option value="Boisson alcolisée">Boisson alcoolisée</option>
+            <option value="autre">Autre</option>
+          </select>
+
+          <label for="degresBa">
+            <strong> Degres d'alcool</strong>
+          </label>
+          <input
+            type="text"
+            class="degresBa"
+            placeholder="Degres d'alcool"
+            name="degresBa"
+          />
+
+          <br />
+
+          <input type="submit" value="Ajouter" class="btn" />
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Fermer
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- INSERTION DU TABLEAU QUI VA PERMETTRE D'AFFICHER LES PRODUITS SUR LE SITE AVEC LES DONNES DU FORMULAIRE -->
+    <div class="divTable">
+      <table class="table">
+        <tr>
+          <th>Produit</th>
+          <th>Quantité</th>
+          <th>Prix Achat HT</th>
+          <th>Prix vente HT</th>
+          <th>Marge HT</th>
+          <th>TVA</th>
+          <th>Prix vente TTC</th>
+          <th>Type de produit</th>
+          <th>Degres alcool</th>
+          <th>Supprimer</th>
+        </tr>
+
+        <tbody></tbody>
+
+        <!-- <tr class="afficheinfo"></tr> -->
+      </table>
+    </div>
+
+    <table></table>
+
+    <footer></footer>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

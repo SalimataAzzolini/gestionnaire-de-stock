@@ -1,0 +1,150 @@
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fffbfb;
+  border-bottom: solid 7px #bf0e7e;
+  margin-top: -5px;
+}
+
+header img {
+  height: 80px;
+  margin-left: 20px;
+}
+
+/* Style sur le bouton qui permet d'ouvrir le formulaire */
+.open-button {
+  font-family: Helvetica, sans-serif;
+  background-color: #bf0e7e;
+  color: white;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* DIV TITRE STOCK */
+
+.titreStock h1 {
+  font-size: 2em;
+  margin-top: 35px;
+  text-align: center;
+  color: #3f0d2a;
+}
+
+.traitTitreStock {
+  letter-spacing: -3px;
+}
+
+.bouteille {
+  height: 80px;
+}
+
+/*Polices principales du site body*/
+
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+/* Positionnez la forme Popup */
+/* .login-popup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+} */
+/* Masquez la forme Popup */
+.form-popup {
+  display: none;
+  position: fixed;
+  left: 46%;
+  transform: translate(-45%, 5%);
+  border: 1px solid #5e1e46;
+  border-radius: 2px;
+  box-shadow: 40px -20px #5e1e46;
+  z-index: 9;
+}
+/* Styles pour le conteneur de la forme */
+.form-container {
+  padding: 20px;
+  background-color: #fffbfb;
+}
+/* Largeur complète pour les champs de saisie */
+.form-container input[type="text"],
+.form-container select {
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #eee;
+}
+/* style au moment de la selection d'un input : focus */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  outline: none;
+}
+/* Style sur le bouton pour ajouter un produit*/
+.form-container .btn {
+  background-color: #bf0e7e;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+/* Style sur le bouton pour fermer le formulaire */
+.form-container .cancel {
+  background-color: #5e1e46;
+}
+/* Planez les effets pour les boutons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 2;
+}
+
+/* Style sur le tableau des produits */
+
+.divTable {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  border: 1px solid black;
+  padding: 10px 20px;
+  background-color: #5e1e46;
+  color: white;
+}
+td {
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+
+.divTable {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tdRed {
+  background-color: red;
+}
+
+.editButton {
+  border: 1px solid black;
+  padding: 12px 31px 11px 30px;
+  background-color: #f5b9df;
+  margin-right: 18px;
+}
+
+.deleteButton {
+  border: 1px solid black;
+  padding: 12px 31px 11px 30px;
+  background-color: #f5b9df;
+}
